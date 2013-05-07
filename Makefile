@@ -21,3 +21,12 @@ relclean:
 	@rm -rf just_mini
 
 clobber: relclean clean
+
+get-deps:
+	@./rebar get-deps
+
+update-deps:
+	@./rebar update-deps
+
+develop:
+	@just_mini/bin/just develop
