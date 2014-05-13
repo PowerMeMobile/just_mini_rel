@@ -30,3 +30,6 @@ update-deps:
 
 develop:
 	@just_mini/bin/just develop
+
+tags:
+	@find . -name "*.[e,h]rl" -print | etags -
