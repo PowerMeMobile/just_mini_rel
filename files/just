@@ -103,8 +103,8 @@ case "$1" in
         case "$1" in
             console)        BOOTFILE=$SCRIPT ;;
             develop)
-                BOOTFILE=develop
-                DEV_HOOK="-run just_app set_debug_level" ;;
+                BOOTFILE=$SCRIPT
+                DEV_HOOK="-run just_app set_develop_mode" ;;
         esac
         # Setup beam-required vars
         ROOTDIR=$RUNNER_BASE_DIR
